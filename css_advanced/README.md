@@ -1,0 +1,2 @@
+"Figma to HTML/CSS Website Clone"
+This project is a responsive website built with HTML and CSS, replicating a design provided in Figma. It demonstrates fundamental front-end development skills in layout, styling, and responsiveness. 

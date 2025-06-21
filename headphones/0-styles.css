@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'SourceSansPro';
+}
+
+/*font import*/
+@font-face {
+  font-family: 'SourceSansPro' ;
+  src: url('./fonts/SourceSansPro-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('./fonts/SourceSansPro-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* Entire header with background image */
+header {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.95)), 
+  url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+}
+.logo{
+  width: 155px;
+  height: 31px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  list-style: none;
+}
+.header-list{
+  list-style-type: none;
+  display: flex;
+  gap: 20px ;
+}
+
+.header-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-transform: lowercase;
+  list-style-type: none;
+}
+
+.header-list li a:hover {
+  text-decoration: underline;
+  color: #FF6565;
+}
+
+/* Hero Section styles */
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 120px);
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-p {
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #FF6565;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover,.hero-btn:active {
+  opacity: 0.9;
+}
+
+.hero-content {
+  max-width: 800px;
+  font-size: 14px;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .header-list {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-content {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    width: 80%;
+    padding: 12px;
+  }
+}

@@ -149,7 +149,7 @@ header {
   display: inline-block;         
   padding: 20px;
   max-width: 700px;
-  color: white;
+  color: black;
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 40px;
@@ -188,5 +188,67 @@ header {
   background-position: center;
   color: white;
   min-height:50vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center; 
+}
+.results-title{
+  display: inline-block;         
+  padding: 20px;
+  max-width: 700px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+
+.results-div{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.95)), 
+  url('images/pentagone.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+}
+.pentagon-box {
+  position: relative;
+  width: 120px; /* Adjust to your image width */
+  height: 120px; /* Adjust to your image height */
+  display: inline-block;
+  margin: 10px;
+  gap: 30px;
+}
+
+.pentagon-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  pointer-events: none; /* lets clicks go through to image if needed */
+}
+
+.text-overlay h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.text-overlay p {
+  font-weight: normal;
+  font-size: 8px
 }
 

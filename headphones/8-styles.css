@@ -1,0 +1,428 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "SourceSansPro";
+}
+
+/*font import*/
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("./fonts/SourceSansPro-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("./fonts/SourceSansPro-Bold.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Entire header with background image */
+header {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+}
+.logo {
+  width: 155px;
+  height: 31px;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  list-style: none;
+}
+.header-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-transform: lowercase;
+  list-style-type: none;
+}
+
+.header-list li a:hover {
+  text-decoration: underline;
+  color: #ff6565;
+}
+
+/* Hero Section styles */
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 120px);
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff6565;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  opacity: 0.9;
+}
+
+.hero-content {
+  max-width: 800px;
+  font-size: 14px;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .header-list {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-content {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    width: 80%;
+    padding: 12px;
+  }
+}
+
+/*What to do section*/
+
+.features-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.description-box {
+  display: inline-block;
+  padding: 20px;
+  max-width: 700px;
+  color: black;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.features-icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 0 1 180px;
+  text-align: center;
+}
+
+.feature img {
+  width: 60px;
+  display: block;
+  margin: 0 auto 10px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/*Result section*/
+.results-section {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+.results-title {
+  display: inline-block;
+  padding: 20px;
+  max-width: 700px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.results-div {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url("images/pentagone.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+}
+.pentagon-box {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin: 10px;
+  gap: 30px;
+}
+
+.pentagon-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6565; 
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.text-overlay h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.text-overlay p {
+  font-weight: normal;
+  font-size: 8px;
+}
+
+/*Form section*/
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 120px);
+  padding: 0 20px;
+  gap: 20px;
+}
+.contact-form {
+  width: 300px;
+  text-align: center;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #111;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-button {
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff6565;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+/*Footer section*/
+.footer {
+  background-color: #020d1b;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left .logo {
+  margin-right: 10px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-right a:hover,
+a:active {
+  cursor: pointer;
+}
+
+.footer-right a {
+  font-size: initial;
+  margin-right: 30px;
+}
+
+.footer-right img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.footer-right img:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffff;
+}
+
+/* Hover bounce effect */
+.feature:hover {
+  animation: bounce 0.6s ease;
+}
+
+/* Pentagon container grid */
+.results-section .pentagon-box {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Bounce animation on hover */
+.pentagon-box:hover {
+  animation: bounce 0.6s ease;
+}
+
+/* Text inside the pentagon */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* ============ Bounce Keyframe Animation ============ */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-15px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+
